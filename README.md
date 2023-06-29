@@ -5,7 +5,8 @@ Obs.: Adicionei uma pequena feature de modal como resultado do preenchimento do 
       Ao preencher o formulário e clicar no <button value="Fale Conosco"> é disparada a função de execução do modal
       para demonstrar na tela que o precesso funcionou corretamente.
 
-Desafio 1 - Resolução
+<strong>Desafio 1 - Resolução</strong>
 
 Link do site disponibilizado: https://dnc-landingpage-arquitetura.netlify.app/
+
 Link da planilha de registro de informação: https://docs.google.com/spreadsheets/d/1EPocJl-fcQYsZysj249qT_V54rPU7V1HVO81A15ZQHA/edit#gid=0
