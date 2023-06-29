@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Arquitetura</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1 id="title1" >Tradição em projetos de arquitetura</h1>
+        <p>Arquitetura residencial e comercial.</p>
+    </header>
+
+    <section id="sec1">
+        <div>
+            <div>
+                <h1 class="numeros-sec1">850</h1>
+            </div>
+            <div>
+                <p>empreendimentos construídos</p>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h1 class="numeros-sec1">40</h1>
+            </div>
+            <div>
+                <p>anos de mercado e experiência</p>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h1 class="numeros-sec1">2,000,000</h1>
+            </div>
+            <div>
+                <p>m² em projetos construídos</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec2">
+        <div id="sec2-txt">
+            <h1 class="numeros-sec1">Arquitetos com História e Experiência</h1>
+            <br>
+            <p>Nós realizamos desde 2002 projetos e gerenciamento de obras.
+                <br>Com mais de 800 projetos e 2.000.000 de m² construídos, tendo
+                <br>como principal proposta transformar em realidade os sonhos de
+                <br>seus clientes, criando projetos personalizados, unindo a tradição
+                <br>e a modernidade em nossos projetos.
+            </p>
+        </div>
+        <div id="house">
+            <img src="image/house.svg" alt="Apartamento Decorado" width="420">
+        </div>
+    </section>
+
+    <footer>
+        <h1>Conheça mais sobre nossos serviços:</h1>
+        <form action="https://api.sheetmonkey.io/form/fFvp4XzNmdHWYg5EPCxPpb" method="POST">
+            <p>
+                <input type="text" name="Name" required id="nome" placeholder="Nome">
+            </p>
+            <p>
+                <input type="email" name="Email" required id="email" placeholder="Email">
+            </p>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time">
+            <p>
+                <button id="open-modal" type="submit">Fale Conosco</button>
+            </p>
+        </form>
+    </footer>
+
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h2>Sucesso!</h2>
+            <button id="close-modal">Fechar</button>
+        </div>
+        <div class="modal-body">
+            <p>
+                Recebemos suas informações com êxito!
+            </p>
+            <p>
+                Obrigado pelo interesse em nossos serviços.<br>
+                Nosso time entrará em contato com você em breve.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
