@@ -1,24 +1,32 @@
-const openModalButton = document.querySelector("#open-modal")
-const closeModalButton = document.querySelector("#close-modal")
-const modal = document.querySelector("#modal")
-const fade = document.querySelector("#fade")
+const openModalButton = document.getElementById("open-modal");
 
-var nome = document.querySelector("input#nome")
-var email = document.querySelector("input#email")
+openModalButton.disabled = true;
 
-openModalButton.addEventListener("click", () => emptyFields())
-if (nome == '' || email == '') {
-    var emptyFields = () => {
-        alert("Para conhecer nossos serviços, precisamos que seja fornecida suas informações")
-    }
+document.getElementById("email").addEventListener("input", () => {
+    var nome = document.getElementById("nome").value;
+    var email = document.getElementById("email").value;
+
+    if (nome !== '' && nome !== null && email !== '' && email !== null) {
+        openModalButton.disabled = false;
+
+        const closeModalButton = document.querySelector("#close-modal");
+        const modal = document.querySelector("#modal");
+        const fade = document.querySelector("#fade");
+
+        const toggleModal = () => {
+            [modal, fade].forEach(el => el.classList.toggle("hide"))
+        }
     
-
-} else {
-    const toggleModal = () => {
-        [modal, fade].forEach(el => el.classList.toggle("hide"))
+        [openModalButton, closeModalButton, fade].forEach(el => {
+            el.addEventListener("click", () => toggleModal())
+        });
+    } else {
+        openModalButton.disabled = true;
     }
+});
 
-    [openModalButton, closeModalButton, fade].forEach(el => {
-        el.addEventListener("click", () => toggleModal()) 
-    })
-}
+openModalButton.addEventListener("onload", () => {    
+    nome.value = '';
+    email.value = '';
+    openModalButton.disabled = true;
+});
