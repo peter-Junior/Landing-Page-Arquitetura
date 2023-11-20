@@ -6,7 +6,6 @@
     <title>Landing Page Arquitetura</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
 
 </head>
 <body>
@@ -64,12 +63,12 @@
         <h1>Conheça mais sobre nossos serviços:</h1>
         <form action="https://api.sheetmonkey.io/form/fFvp4XzNmdHWYg5EPCxPpb" method="POST">
             <p>
-                <input type="text" name="Name" required id="nome" placeholder="Nome">
+                <input type="text" name="Name" id="nome" placeholder="Nome">
             </p>
             <p>
-                <input type="email" name="Email" required id="email" placeholder="Email">
+                <input type="email" name="Email" id="email" placeholder="Email">
             </p>
-            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time">
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time">
             <p>
                 <button id="open-modal" type="submit">Fale Conosco</button>
             </p>
@@ -92,5 +91,7 @@
             </p>
         </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
